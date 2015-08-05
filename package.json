@@ -48,7 +48,9 @@
     "serve-favicon": "latest",
     "shelljs": "latest",
     "swig": "latest",
-    "view-helpers": "latest"
+    "view-helpers": "latest",
+    "cheerio": "latest",
+    "angulartics":"latest"
   },
   "devDependencies": {
     "connect-modrewrite": "latest",

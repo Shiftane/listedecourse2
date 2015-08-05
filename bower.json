@@ -12,6 +12,10 @@
     "angular-ui-router": "#master",
     "web-bootstrap": "./node_modules/meanio/resources/web-bootstrap.js",
     "angular-ui-select": "latest",
-    "angular-sanitize": "latest"
+    "angular-sanitize": "latest",
+    "angular-number-picker": "latest",
+    "angular-ui-tree": "latest",
+    "angulartics": "latest",
+    "angular-mailchimp": "latest"
   }
 }

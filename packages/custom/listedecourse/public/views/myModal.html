@@ -1,0 +1,40 @@
+
+        <div class="modal-header">
+            <h3 class="modal-title">Liste de courses</h3>
+        </div>
+        <div class="modal-body" id="printableArea">
+            <!-- LIST OF INGREDIENTS AND RECIPES-->
+              <script type="text/ng-template" id="items_renderer.html">
+                <div ui-tree-handle>
+                  <a class="btn btn-success btn-xs" data-nodrag ng-click="toggle(this)"><span class="glyphicon" ng-class="{'glyphicon-chevron-right': collapsed, 'glyphicon-chevron-down': !collapsed}"></span></a>
+                  {{recette.title}} {{recette.contenu.nbrPersons}} Personne(s)
+                  <a class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="remove(this)"><span class="glyphicon glyphicon-remove"></span></a>
+                </div>
+                <ol ui-tree-nodes="options" ng-model="recette.contenu.ingredients" ng-class="{hidden: collapsed}" collapsed="true">
+                  <li ng-repeat="ingredient in recette.contenu.ingredients" ui-tree-node>
+                    <div ui-tree-handle class="row">
+                            <input class="col-xs-1 col-sm-1 col-md-1 col-lg-1 checkbox" ng-model="inshoppinglist" type="checkbox"/>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              {{ingredient.product}} 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                              {{ingredient.quantity | number:1}} {{ingredient.unity}}
+                            </div>
+                      <a class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="remove(this)"><span class="glyphicon glyphicon-remove"></span></a>
+                    </div>
+                  </li>
+                </ol>
+              </script>
+              <div ui-tree="options" data-drag-enabled="false" ng-init="collapseAll()">
+                <ol ui-tree-nodes ng-model="listedecourse.recettes" >
+                  <li ng-repeat="recette in listedecourse.recettes" ui-tree-node ng-include="'items_renderer.html'"></li>
+                </ol>
+              </div>
+
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="print('printableArea')">
+                <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-warning" ng-click="cancel()">Retour</button>
+        </div>

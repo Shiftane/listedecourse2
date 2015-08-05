@@ -1,0 +1,16 @@
+<div class="box-results box-scroll " >
+  <table class="table table-striped table-hover" >
+      <tr data-ng-repeat="resultSearch in results.results" class="">
+        <td class="cell-img-result">
+          <img data-ng-src="{{resultSearch.providerLogoUrl}}" class="img-result">
+        </td>
+        <td>
+          <a data-ng-click="getRecipe(resultSearch.providerBasedUrl + resultSearch.link, resultSearch.providerName)">{{resultSearch.title}}</a>
+        
+        
+        
+        </td>
+      </tr>
+  </table>
+  
+</div>

@@ -1,0 +1,12 @@
+
+<div data-ng-show="!results" class="homepage col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+
+      <div ng-repeat="idea in ideas.ideas" class="homepage-box-proposal col-xs-12 col-sm-4 col-md-4 col-lg-4 panel">
+        <a ng-href="/#!/listedecourse/search/{{idea.searchTerms}}">
+          <img ng-src="{{idea.imgURL}}" class="img-responsive img-rounded"/>
+          <legend class="legend">{{idea.label}}</legend>
+        </a>
+      </div>
+</div>
+

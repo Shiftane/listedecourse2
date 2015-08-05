@@ -1,0 +1,25 @@
+{
+	"ideas" : [
+		{
+			"name" : "Tartes",
+			"label" : "Les meilleures tartes du moment",
+			"imgURL" : "/listedecourse/assets/img/Tartes.jpg",
+			"searchTerms" : "tartes"
+
+		},
+		{
+			"name" : "Salade",
+			"label" : "Une bonne salade de saison pour ce soir",
+			"imgURL" : "/listedecourse/assets/img/Salades.jpg",
+			"searchTerms" : "Salade fraiche"
+
+		},
+		{
+			"name" : "PatesVeggi",
+			"label" : "Gouter les pates du moments",
+			"imgURL" : "/listedecourse/assets/img/PatesVeggi.jpg",
+			"searchTerms" : "pates"
+
+		}
+	]
+}

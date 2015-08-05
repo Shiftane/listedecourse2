@@ -1,0 +1,330 @@
+
+@font-face {
+    font-family: "Philosopher";
+    src: url('/listedecourse/assets/fonts/Philosopher-Regular.eot?#iefix') format('embedded-opentype'),
+            url('/listedecourse/assets/fonts/Philosopher-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Philosopher";
+    font-style: italic;
+    src: url('/listedecourse/assets/fonts/Philosopher-Italic.eot?#iefix') format('embedded-opentype'),
+            url('/listedecourse/assets/fonts/Philosopher-Italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Philosopher";
+    font-weight: bold;
+    src: url('/listedecourse/assets/fonts/Philosopher-Bold.eot?#iefix') format('embedded-opentype'),
+            url('/listedecourse/assets/fonts/Philosopher-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Philosopher";
+    font-weight: bold;
+    font-style: italic;
+    src: url('/listedecourse/assets/fonts/Philosopher-BoldItalic.eot?#iefix') format('embedded-opentype'),
+            url('/listedecourse/assets/fonts/Philosopher-BoldItalic.ttf') format('truetype');
+}
+
+@media (min-width: 100px) {
+  .container {
+    width: 100%;
+    padding-left:0;
+    padding-right:0;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    padding-left:0;
+    padding-right:0;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+    padding-left:0;
+    padding-right:0;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+    padding-left:0;
+    padding-right:0;
+  }
+}
+.content{
+    margin-top: 0;
+}
+.center{
+	padding-top : 45px;
+    height:100%;
+}
+.container{
+	margin: 0;
+    height : 100%;
+	/*font-family : 'Philosopher';*/
+}
+.menu-top{
+	padding : 10px;	
+	background-color: white;
+	border-bottom: 2px solid #DDD;
+}
+
+/* BOX */
+
+.box {
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    text-align: left;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: auto;
+}
+.box-icon {
+    background-color: #57a544;
+    border-radius: 50%;
+    display: table;
+    height: 30px;
+    margin: 0 auto;
+    width: 30px;
+    margin-top: -31px;
+}
+.box-icon span {
+    color: #fff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.add-to-list{
+    padding-top : 20px;
+}
+
+.info {
+    padding : 30px;
+}
+.info h4 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    height: auto;
+}
+.info > ul {
+    color: #717171;
+    font-size: 12px;
+    padding-top: 2px;
+    text-align: justify;
+}
+.info a{
+    font-size: 12px;
+}
+.info p{
+    margin : 10px 10px 10px 10px;
+    font-size: 11px;
+
+}
+.info > a {
+	font-size: 12px;
+    background-color: #03a9f4;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+.info > a:hover {
+    background-color: #0288d1;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+
+/* END BOX */
+
+.box-results{
+	height : 100%;
+}
+
+.box-scroll{
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.img-result{
+	transform: rotate(-90deg);
+	width: 16px;
+}
+.cell-img-result{
+	padding : 1px;
+}
+
+
+.ingredient-list{
+    margin : 0;
+	font-size: 12px;
+	padding  : 0;
+}
+
+.nbr-people{
+	margin : 20px;
+}
+
+.list-group{
+    padding-top : 50px;
+}
+.search-results{
+	padding-left : 0;
+	padding-right : 0;
+    padding-top: 10px;
+    /*padding-bottom: 40px;*/
+	height:100%;
+	overflow-y: auto;
+	overflow-x: hidden; 
+	box-shadow: 8px 0 8px #CCCCCC;
+}
+
+.recipe-detail{
+    padding-top: 10px;
+    /*padding-bottom: 60px;*/
+}
+
+.recipe-ingredients{
+	box-shadow: -8px 0 8px #CCCCCC;	
+	padding-top:20px;
+}
+
+.select-person-number{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 0;
+    padding-left: 0;
+}
+.label-number-person{
+    padding-right: 0;
+    padding-left: 0; 
+    padding-top: 10px;
+    padding-bottom: 0;  
+}
+
+.row {
+	margin : 0;
+}
+
+.full-height{
+    height: 100%;
+    padding : 0;
+    padding-bottom : 56px;
+}
+
+.label-center{
+	vertical-align: middle;
+}
+span.input-group-addon{
+	cursor: pointer;
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+
+	/* Rules below not implemented in browsers yet */
+	-o-user-select: none;
+	user-select: none;
+}
+
+.modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+
+.btn {
+    margin-right: 8px;
+}
+
+.angular-ui-tree-handle {
+    background: #f8faff;
+    border: 1px solid #dae2ea;
+    color: #7c9eb2;
+    padding: 5px 10px;
+}
+
+.angular-ui-tree-handle:hover {
+    color: #438eb9;
+    background: #f4f6f7;
+    border-color: #dce2e8;
+}
+
+.angular-ui-tree-placeholder {
+    background: #f0f9ff;
+    border: 2px dashed #bed2db;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.group-title {
+    background-color: #687074 !important;
+    color: #FFF !important;
+}
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: black;
+    background: rgba( 0, 0, 0, .2 ) 
+                url('/listedecourse/assets/img/ajax-loader.gif') 
+                50% 50% 
+                no-repeat;
+    background-size: 150px;
+}
+
+.checkbox{
+    display:none;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+
+.footer{
+    padding : 10px; 
+    color : #DDD;
+    background-color: #555;
+    border-top: 2px solid #DDD;
+}
+
+.highlighted{
+    color : #29A629;
+    font-weight: bold;
+}
+.homepage{
+    margin-top : 40px;
+    margin-bottom : 40px;
+}
+.homepage-box-proposal{
+    text-align: center;    
+}

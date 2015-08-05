@@ -1,0 +1,57 @@
+{
+	"providers" : [
+		{
+			"name" : "Marmiton",
+			"basedUrl" : "http://www.marmiton.org",
+			"url" : "http://www.marmiton.org/recettes/recherche.aspx?aqt=",
+			"logoUrl" : "http://images.marmitoncdn.org/Skins/1/Common/Images/favicon.ico",
+			"spaceCharReplacement" : "-",
+			"searchOptions" : {
+				"resultsPath" : "div.m_item.recette_classique",	
+				"resultTitle" : "div.m_titre_resultat",
+				"resultLinkToRecipe" : "div.m_titre_resultat a"
+			},
+			"recipeOptions" : {
+				"recettePath" : "div.m_bloc_cadre",
+				"titlePlaceHolder" : "h1.m_title span.fn",
+				"prepTimePlaceHolder" : "span.preptime",
+				"cookTimePlaceHolder" : "span.cooktime",
+				"descriptionPlaceHolder" : "div.m_content_recette_todo",
+				"image" : "a.m_content_recette_illu > img",
+				"peoplePlaceHolder" : "p.m_content_recette_ingredients > span",
+				"peopleParser" : ["Ingrédients (pour {} personnes) :", "Ingrédients (pour {} verrines) :", "Ingrédients (pour {} gâteau)"],
+				"ingredientsPlaceHolder" : "p.m_content_recette_ingredients span",
+				"ingredientsParsingMethod" : "DashMethod",
+				"toDeleteBeforeParsing" : "p.m_content_recette_ingredients span",
+				"ingredientPlaceHolder" : "p.m_content_recette_ingredients"
+
+			}
+		},
+		{
+			"name" : "CuisineAZ",
+			"basedUrl" : "http://www.cuisineaz.com",
+			"url" : "http://www.cuisineaz.com/recettes/recherche_v2.aspx?recherche=",
+			"logoUrl" : "http://www.cuisineaz.com/favicon.ico",
+			"spaceCharReplacement" : "-",
+			"searchOptions" : {
+				"resultsPath" : "div.rechRecette",	
+				"resultTitle" : "a.rechRecetTitle",
+				"resultLinkToRecipe" : "a.rechRecetTitle"
+			},
+			"recipeOptions" : {
+				"recettePath" : "div.hrecipe",
+				"titlePlaceHolder" : "h1",
+				"prepTimePlaceHolder" : "span.preptime",
+				"cookTimePlaceHolder" : "span.cooktime",
+				"descriptionPlaceHolder" : "span.instructions",
+				"image" : "img.photo",
+				"peoplePlaceHolder" : "span.yield",
+				"peopleParser" : "{} Personne(s)",
+				"ingredientsPlaceHolder" : "p.m_content_recette_ingredients span",
+				"ingredientsParsingMethod" : "ListMethod",
+				"ingredientPlaceHolder" : "li.ingredient"
+			}
+			
+		}	
+	]
+}
