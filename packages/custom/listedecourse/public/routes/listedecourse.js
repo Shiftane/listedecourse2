@@ -7,18 +7,19 @@ angular.module('mean.listedecourse').config(['$stateProvider','$locationProvider
 
     $stateProvider.state('Homepage', {
       url: '/listedecourse/home',
-      templateUrl: 'listedecourse/views/index.html'
+      templateUrl: '/listedecourse/views/ideas.html',
+      controller : 'IdeasController'
     })
-    .state('Search', {
+    .state('Search', {  
       url: '/listedecourse/search/:searchTerm',
-      templateUrl: 'listedecourse/views/index.html',
-      controller : 'ListedecourseController'
+      templateUrl: '/listedecourse/views/index.html'
     })
+    /*
     .state('Recipe', {
       url: '/listedecourse/search/:searchTerm/:providerName/:recipeUrl',
-      templateUrl: 'listedecourse/views/index.html',
+      templateUrl: '/listedecourse/views/index.html',
       controller : 'ListedecourseController'
-    });
+    })*/;
     
   }
 ]);

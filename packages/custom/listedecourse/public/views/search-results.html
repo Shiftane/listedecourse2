@@ -1,16 +1,13 @@
-<div class="box-results box-scroll " >
+<div class="search-results col-xs-12 col-sm-3 col-md-3 col-lg-3 text-left box-results box-scroll ">
+  Resultats de la recherche : {{searchTerm}}
   <table class="table table-striped table-hover" >
-      <tr data-ng-repeat="resultSearch in results.results" class="">
+      <tr data-ng-repeat="resultSearch in results" class="">
         <td class="cell-img-result">
           <img data-ng-src="{{resultSearch.providerLogoUrl}}" class="img-result">
         </td>
         <td>
-          <a data-ng-click="getRecipe(resultSearch.providerBasedUrl + resultSearch.link, resultSearch.providerName)">{{resultSearch.title}}</a>
-        
-        
-        
+          <a data-ng-click="getRecipe(resultSearch.providerBasedUrl + resultSearch.link, resultSearch.providerName)">{{resultSearch.title}}</a>       
         </td>
       </tr>
   </table>
-  
 </div>

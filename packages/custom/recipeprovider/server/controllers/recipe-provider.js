@@ -334,12 +334,12 @@ exports.search = function(req, res) {
             errors.push('Cannot find searchresults with URL = ' + url);
             return; 
           }
-          console.log('get from cache success ');
+          console.log('get from cache success ' + searchresults.length);
           // + searchresults[0]);
           //console.log('Result from cache : ' + searchresults);
           if(searchresults.length > 0){
             body = searchresults[0].resultsHTML;
-            console.log('Result get from CACHE : extract --> ' + body.substring(50));
+            //console.log('Result get from CACHE : extract --> ' + body.substring(50));
             results.push.apply(results, parseSearchResponse(body, url, provider));
           }else{
             errors.push(err);

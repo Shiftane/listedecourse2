@@ -50,15 +50,15 @@ angular.module('mean.system').provider('$meanState', ['$stateProvider', '$viewPa
 angular.module('mean.system').config(['$meanStateProvider', '$urlRouterProvider',
   function($meanStateProvider, $urlRouterProvider) {
     // For unmatched routes:
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/listedecourse/home');
 
     // states for my app
-    $meanStateProvider
+    /*$meanStateProvider
       .state('home', {
         url: '/',
         templateUrl: 'system/views/index.html'
       });
-
+*/
     $meanStateProvider
       .state('Log Out', {
         controller: function () {

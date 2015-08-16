@@ -1,3 +1,30 @@
+<div class="footer navbar-static-bottom navbar-fixed-bottom">
+	
+	<form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl" class="form-inline">
+	<div ng-show="mailchimp.result !== 'success'">
+		<label for="email">Suivez-nous </label>
+		<input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='listedecourse'">
+		<input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us10'">
+		<input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='957fa6179b585083d5206cea2'">
+		<input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='0239a260e5'">
+		<input type="email" name="EMAIL" ng-model="mailchimp.EMAIL" placeholder="Votre email" required class="form-control">
+		<button type="submit" class="btn btn-info" ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)">S'inscrire</button>
+		<!-- Show error message if MailChimp unsuccessfully added the email to the list. -->
+	
+	</div>
+	  <div ng-show="mailchimp.result === 'error'" ng-cloak>
+	    <span ng-bind-html="mailchimp.errorMessage"></span>
+	  </div>
+
+	  <!-- Show success message if MailChimp returned successfully. -->
+	  <div ng-show="mailchimp.result === 'success'" ng-cloak>
+	    <span ng-bind-html="mailchimp.successMessage"></span>
+	  </div>
+	</form>
+
+
+</div>
+
 {% for file in aggregatedassets.footer.js %}
   <script type="text/javascript" src="{{file}}"></script>
 {% endfor %}

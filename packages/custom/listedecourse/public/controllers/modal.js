@@ -1,5 +1,6 @@
 'use strict';
-angular.module('mean.listedecourse').controller('ModalInstanceController', function ($scope, $log, $modalInstance, listedecourse, $analytics) {
+angular.module('mean.listedecourse').controller('ModalInstanceController', ['$scope', '$log', '$modalInstance', 'listedecourse', '$analytics',
+ function ($scope, $log, $modalInstance, listedecourse, $analytics) {
 
   $scope.listedecourse = listedecourse;
   // $scope.selected = {
@@ -38,4 +39,4 @@ angular.module('mean.listedecourse').controller('ModalInstanceController', funct
     $log.info('Cancel Popup ');
     $modalInstance.dismiss('cancel');
   };
-});
+}]);

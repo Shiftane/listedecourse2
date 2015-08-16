@@ -18,7 +18,10 @@
         "bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
         "bower_components/angular-ui-select/dist/select.min.js",
         "bower_components/web-bootstrap/index.js",
-        "bower_components/angulartics/dist/angulartics.min.js"
+        "bower_components/angulartics/dist/angulartics.min.js",
+        "bower_components/angulartics-google-analytics/dist/angulartics-google-analytics.min.js",
+        "bower_components/angular-mailchimp/angular-mailchimp.js",
+        "bower_components/angular-number-picker/angular-number-picker.min.js"
       ]
     }
   }

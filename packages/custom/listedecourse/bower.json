@@ -5,6 +5,7 @@
     "angular-number-picker": "latest",
     "angular-ui-tree": "latest",
     "angulartics": "latest",
-    "angular-mailchimp": "latest"
+    "angular-mailchimp": "latest",
+    "angular-number-picker": "latest"
   }
 }
