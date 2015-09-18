@@ -46,7 +46,7 @@ var parseSearchResponse = function(body, url, provider){
 
       // Remove the basedURL
       if(newRecipe.link)newRecipe.link = newRecipe.link.replace(provider.basedUrl, '');
-      
+      console.log('new recipe : ' + JSON.stringify(newRecipe));
       results.push(newRecipe);
     });
     return results;
@@ -344,6 +344,7 @@ exports.search = function(req, res) {
           }else{
             errors.push(err);
           }
+          done();
         });
       }else{
         // Marmiton is available, we save the result in DB and parse the content

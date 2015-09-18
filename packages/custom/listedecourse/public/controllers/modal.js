@@ -1,8 +1,8 @@
 'use strict';
-angular.module('mean.listedecourse').controller('ModalInstanceController', ['$scope', '$log', '$modalInstance', 'listedecourse', '$analytics',
- function ($scope, $log, $modalInstance, listedecourse, $analytics) {
+angular.module('mean.listedecourse').controller('ModalInstanceController', ['$scope', '$log', '$modalInstance', 'basketService', '$analytics',
+ function ($scope, $log, $modalInstance, basketService, $analytics) {
 
-  $scope.listedecourse = listedecourse;
+  $scope.basket = basketService.getBasket();
   // $scope.selected = {
   //   item: $scope.items[0]
   // };

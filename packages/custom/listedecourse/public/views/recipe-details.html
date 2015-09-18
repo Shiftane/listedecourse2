@@ -38,7 +38,7 @@
     <form name="quantitiesChange" class="css-form">
       <div class="row">
         <div class="text-center add-to-list col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <button class="btn btn-success" data-ng-click="saveRecetteInListeDeCourse()">
+          <button class="btn btn-success" data-ng-click="addRecipe()">
             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
             Ajouter à ma liste
           </button>
@@ -46,7 +46,7 @@
         <div class="nbr-people">
             <div class="control-group">
               <label class="label-number-person col-xs-12 col-sm-12 col-md-12 col-lg-12 label-center">Nombre de Personnes</label> 
-              <h-number change="changeNbrPerson()" value="num" step="1" min="1" class="select-person-number col-xs-2 col-sm-2 col-md-2 col-lg-2"></h-number>
+              <h-number change="changeNbrPerson()" value="input.num" step="1" min="1" class="select-person-number col-xs-2 col-sm-2 col-md-2 col-lg-2"></h-number>
               
             </div>
             <input type="hidden" data-ng-model="oldNbrPersons"/>

@@ -20,14 +20,14 @@
                             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                               {{ingredient.quantity | number:1}} {{ingredient.unity}}
                             </div>
-                      <a class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="remove(this)"><span class="glyphicon glyphicon-remove"></span></a>
+                      <!--<a class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="remove(this)"><span class="glyphicon glyphicon-remove"></span></a>-->
                     </div>
                   </li>
                 </ol>
               </script>
               <div ui-tree="options" data-drag-enabled="false" ng-init="collapseAll()">
-                <ol ui-tree-nodes ng-model="listedecourse.recettes" >
-                  <li ng-repeat="recette in listedecourse.recettes" ui-tree-node ng-include="'items_renderer.html'"></li>
+                <ol ui-tree-nodes ng-model="basket" >
+                  <li ng-repeat="recette in basket" ui-tree-node ng-include="'items_renderer.html'"></li>
                 </ol>
               </div>
 

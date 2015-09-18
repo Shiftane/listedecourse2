@@ -18,12 +18,12 @@
 				"cookTimePlaceHolder" : "span.cooktime",
 				"descriptionPlaceHolder" : "div.m_content_recette_todo",
 				"image" : "a.m_content_recette_illu > img",
-				"peoplePlaceHolder" : "p.m_content_recette_ingredients > span",
-				"peopleParser" : ["Ingrédients (pour {} personnes) :", "Ingrédients (pour {} verrines) :", "Ingrédients (pour {} gâteau)"],
-				"ingredientsPlaceHolder" : "p.m_content_recette_ingredients span",
+				"peoplePlaceHolder" : "div.m_content_recette_ingredients > span",
+				"peopleParser" : ["Ingrédients (pour {} personnes) :", "Ingrédients (pour {} Personnes) :", "Ingrédients (pour {} verrines) :", "Ingrédients (pour {} gâteau)"],
+				"ingredientsPlaceHolder" : "div.m_content_recette_ingredients span",
 				"ingredientsParsingMethod" : "DashMethod",
-				"toDeleteBeforeParsing" : "p.m_content_recette_ingredients span",
-				"ingredientPlaceHolder" : "p.m_content_recette_ingredients"
+				"toDeleteBeforeParsing" : "div.m_content_recette_ingredients span",
+				"ingredientPlaceHolder" : "div.m_content_recette_ingredients"
 
 			}
 		},

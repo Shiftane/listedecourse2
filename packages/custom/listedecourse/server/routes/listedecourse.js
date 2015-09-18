@@ -13,10 +13,10 @@ var listedecourses = require('../controllers/listedecourses');
 
 module.exports = function(ListeDeCourse, app, auth) {
   
-  app.route('/listedecourses')
+  app.route('/api/listedecourses')
     .get(listedecourses.all)
     .post(listedecourses.create);
-  app.route('/listedecourses/:listedecourseId')
+  app.route('/api/listedecourses/:listedecourseId')
     .get(listedecourses.show)
     .put( listedecourses.update)
     .delete(listedecourses.destroy);
