@@ -19,7 +19,7 @@
 				"descriptionPlaceHolder" : "div.m_content_recette_todo",
 				"image" : "a.m_content_recette_illu > img",
 				"peoplePlaceHolder" : "div.m_content_recette_ingredients > span",
-				"peopleParser" : ["Ingrédients (pour {} personnes) :", "Ingrédients (pour {} Personnes) :", "Ingrédients (pour {} verrines) :", "Ingrédients (pour {} gâteau)"],
+				"peopleParser" : ["Ingrédients (pour {} Personne) :", "Ingrédients (pour {} personnes) :", "Ingrédients (pour {} Personnes) :", "Ingrédients (pour {} verrines) :", "Ingrédients (pour {} gâteau)"],
 				"ingredientsPlaceHolder" : "div.m_content_recette_ingredients span",
 				"ingredientsParsingMethod" : "DashMethod",
 				"toDeleteBeforeParsing" : "div.m_content_recette_ingredients span",

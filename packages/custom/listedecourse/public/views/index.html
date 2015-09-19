@@ -1,14 +1,8 @@
-<div class="full-height">
-  <div class="container">
-    <div class="center" ng-controller="SearchresultsController" ng-init="init()">
-      <!-- SEARCH RESULTS -->
-      <div ng-include="'/listedecourse/views/search-results.html'" >
-      
-      </div>
-      <!-- RECIPE DESCRIPTION -->
-      <div ng-include="'/listedecourse/views/recipe-details.html'"></div>  
-    </div>
-  </div>
+<div class="full-height row">
+    <!-- SEARCH RESULTS -->
+    <div ng-include="'/listedecourse/views/search-results.html'" class="col-xs-12 col-sm-3 col-md-3 col-lg-3 box-scroll text-left search-results box-results"></div>
+    <!-- RECIPE DESCRIPTION -->
+    <div ng-include="'/listedecourse/views/recipe-details.html'" class="col-xs-12 col-sm-9 col-md-9 col-lg-9 recipe-detail box-scroll full-height"></div>
 </div>
 <div class="modal"><!-- Place at bottom of page --></div>
 

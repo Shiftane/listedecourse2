@@ -1,40 +1,33 @@
-<div ng-controller="RecipeController" ng-init="init()">  
-  <div data-ng-show="recipe" class="full-height recipe-detail box-scroll col-xs-12 col-sm-6 col-md-6 col-lg-6">
-    <div class="full-height">
-        <div class="info">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-show="recipe.result.image">
-              <img data-ng-src="{{recipe.result.image}}" class="box-shadow center-block img-rounded img-responsive">
-            </div>
-
-
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-              <h1>{{recipe.result.title}}</h1>
-              <p class="highlighted">
-                Temps de préparation : 
-                <span class="badge">{{recipe.result.prepTime}} min</span>
-              </p>
-              <p class="highlighted">
-                Temps de cuisson : 
-                <span class="badge">{{recipe.result.cookingTime}} min</span>
-              </p>
-
-              <h4>Voir la recette d'origine sur :</h4>
-              <span>
-                <a href="{{recipe.recipeUrl}}" target="_blank">
-                  {{recipe.origin}} <img data-ng-src="{{recipe.logoUrl}}" class="" style="width:20px;heigth:20px"/>
-                </a>
-              </span>
-              
-            
-            </div>
-
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-ng-bind-html="recipe.result.descriptionSafe">
-            </div>
-
+<div data-ng-show="recipe" ng-controller="RecipeController" ng-init="init()" class="full-heightrow">  
+  <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 info row panel panel-primary full-height">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-heading">
+        <h1 class="panel-title">{{recipe.result.title}}</h1>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        
+        <div class="highlighted">
+          Temps de préparation : 
+          <span class="label label-success">{{recipe.result.prepTime}} min</span>
         </div>
-    </div>
+        <div class="highlighted">
+          Temps de cuisson : 
+          <span class="label label-info">{{recipe.result.cookingTime}} min</span>
+        </div>
+
+        <h4>Voir la recette d'origine sur :</h4>
+        <span>
+          <a href="{{recipe.recipeUrl}}" target="_blank">
+            {{recipe.origin}} <img data-ng-src="{{recipe.logoUrl}}" class="" style="width:20px;heigth:20px"/>
+          </a>
+        </span>      
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ng-show="recipe.result.image">
+        <img data-ng-src="{{recipe.result.image}}" class="box-shadow center-block img-rounded img-responsive">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-ng-bind-html="recipe.result.descriptionSafe">
+      </div>
   </div>
-  <div data-ng-show="recipe" class="full-height box-scroll recipe-ingredients  col-xs-12 col-sm-3 col-md-3 col-lg-3">
+  <div class="box-scroll recipe-ingredients col-xs-12 col-sm-3 col-md-3 col-lg-3 full-height">
     <form name="quantitiesChange" class="css-form">
       <div class="row">
         <div class="text-center add-to-list col-xs-12 col-sm-12 col-md-12 col-lg-12">
