@@ -55,6 +55,7 @@
     "del": "latest",
     "expect.js": "latest",
     "gulp": "latest",
+    "cheerio": "latest",
     "gulp-concat": "latest",
     "gulp-csslint": "latest",
     "gulp-cssmin": "latest",
