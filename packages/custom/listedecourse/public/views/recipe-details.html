@@ -1,5 +1,5 @@
-<div data-ng-show="recipe" ng-controller="RecipeController" ng-init="init()" class="full-heightrow">  
-  <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 info row panel panel-primary full-height">
+<div data-ng-show="recipe" ng-controller="RecipeController" ng-init="init()" class="full-height row">  
+  <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 info row panel panel-primary full-height box-scroll ">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel-heading">
         <h1 class="panel-title">{{recipe.result.title}}</h1>
       </div>
@@ -27,35 +27,37 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-ng-bind-html="recipe.result.descriptionSafe">
       </div>
   </div>
-  <div class="box-scroll recipe-ingredients col-xs-12 col-sm-3 col-md-3 col-lg-3 full-height">
+  <div class="recipe-ingredients col-xs-12 col-sm-3 col-md-3 col-lg-3 full-height box-scroll ">
     <form name="quantitiesChange" class="css-form">
-      <div class="row">
         <div class="text-center add-to-list col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <button class="btn btn-success" data-ng-click="addRecipe()">
             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
             Ajouter à ma liste
           </button>
-        </div>  
-        <div class="nbr-people">
-            <div class="control-group">
-              <label class="label-number-person col-xs-12 col-sm-12 col-md-12 col-lg-12 label-center">Nombre de Personnes</label> 
-              <h-number change="changeNbrPerson()" value="input.num" step="1" min="1" class="select-person-number col-xs-2 col-sm-2 col-md-2 col-lg-2"></h-number>
-              
-            </div>
-            <input type="hidden" data-ng-model="oldNbrPersons"/>
+          
+          <div class="nbr-people">
+              <div class="control-group text-center">
+                 <label class="label-number-person">pour</label>
+                <h-number change="changeNbrPerson()" value="input.num" step="1" min="1" class="select-person-number"></h-number>
+                <label class="label-number-person">Personne(s)</label>
+              </div>
+              <input type="hidden" data-ng-model="oldNbrPersons"/>
+          </div>
         </div>
-        <br/>
-        <br/>
-        <ul class="list-group ingredient-list">
-          <li class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 ingredient list-group-item" data-ng-repeat="ingredient in recipe.result.contenu.ingredients">
-              <!--<input type="checkbox" class="checkbox-success" checked>-->
-              {{ingredient.product}}
-
-
-               <span class="badge" ng-show="ingredient.quantity">{{ingredient.quantity | number:1}} {{ingredient.unity}}</span>
-
-          </li>
-      </div>
+        <div class="clearfix"></div>
+        <div>
+          <ul class="list-group ingredient-list">
+            <li class="list-group-item active">Ingrédients calculés</li>
+            <li class="row ingredient list-group-item" data-ng-repeat="ingredient in recipe.result.contenu.ingredients">
+                <!--<input type="checkbox" class="checkbox-success" checked>-->
+                {{ingredient.product}}
+  
+  
+                <span class="badge" ng-show="ingredient.quantity">{{ingredient.quantity | number:1}} {{ingredient.unity}}</span>
+  
+            </li>
+          </ul>
+        </div>
     </form>
 
   </div>

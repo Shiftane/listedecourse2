@@ -178,12 +178,10 @@
 }
 
 .nbr-people{
-	margin : 20px;
+	margin : 5px;
+    float:left;
 }
 
-.list-group{
-    padding-top : 50px;
-}
 .search-results{
 	padding-left : 0;
 	padding-right : 0;
@@ -202,9 +200,10 @@
 }
 
 .recipe-ingredients{
-	border: 1px solid #CCCCCC;	
-	padding-top:20px;
+	border: 1px solid #CCCCCC;
     float:left;
+    margin : 0;
+    padding: 5px;
 }
 
 .select-person-number{
@@ -253,9 +252,7 @@ span.input-group-addon{
 }
 
 
-.btn {
-    margin-right: 8px;
-}
+
 
 .angular-ui-tree-handle {
     background: #f8faff;
