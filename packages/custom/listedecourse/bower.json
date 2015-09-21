@@ -2,10 +2,6 @@
   "name": "listedecourse",
   "version": "0.0.1",
   "dependencies": {
-    "angular-number-picker": "latest",
-    "angular-ui-tree": "latest",
-    "angulartics": "latest",
-    "angular-mailchimp": "latest",
-    "angular-number-picker": "latest"
+    
   }
 }

@@ -48,6 +48,8 @@
     "serve-favicon": "latest",
     "shelljs": "latest",
     "swig": "latest",
+    "angulartics":"latest",
+    "angulartics-google-analytics":"latest",
     "view-helpers": "latest"
   },
   "devDependencies": {
