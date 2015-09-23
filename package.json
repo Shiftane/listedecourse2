@@ -50,6 +50,7 @@
     "swig": "latest",
     "angulartics":"latest",
     "angulartics-google-analytics":"latest",
+    "zeroclipboard":"latest",
     "view-helpers": "latest"
   },
   "devDependencies": {

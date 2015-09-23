@@ -7,6 +7,7 @@
     "angular-cookies": "latest",
     "angular-mocks": "latest",
     "angular-route": "latest",
+    "angular-jwt": "latest",
     "bootstrap": "latest",
     "angular-bootstrap": "latest",
     "angular-ui-router": "#master",
@@ -16,10 +17,11 @@
     "angular-number-picker": "latest",
     "angular-ui-tree": "latest",
     "angulartics": "latest",
+    "angulartics-google-analytics": "latest",
     "angular-mailchimp": "latest",
-    "angular-number-picker": "latest"
+    "zeroclipboard":"latest"
   },
   "resolutions": {
-    "angular": "1.4.5"
+    "angular": "1.4.6"
   }
 }
