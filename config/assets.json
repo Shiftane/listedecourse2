@@ -24,7 +24,8 @@
         "bower_components/angular-mailchimp/angular-mailchimp.js",
         "bower_components/angular-number-picker/angular-number-picker.js",
         "bower_components/zeroclipboard/dist/ZeroClipboard.min.js",
-        "bower_components/angular-jwt/dist/angular-jwt.min.js"
+        "bower_components/angular-jwt/dist/angular-jwt.min.js",
+        "bower_components/ng-clip/dest/ng-clip.min.js"
       ]
     }
   }

@@ -161,8 +161,8 @@ angular.module('mean.listedecourse').controller('SearchresultsController',
 
 
 angular.module('mean.listedecourse').controller('RecipeController', 
-    ['$scope', '$rootScope', '$log', '$http', 'Global', 'searchresultService','$modal','$sce', '$analyticsProvider', '$location', '$stateParams',
-  function($scope, $rootScope, $log, $http, Global, searchresultService, $modal, $sce, $analyticsProvider, $location, $stateParams) {
+    ['$scope', '$rootScope', '$log', '$http', 'Global', 'searchresultService','$modal','$sce', '$analytics', '$location', '$stateParams',
+  function($scope, $rootScope, $log, $http, Global, searchresultService, $modal, $sce, $analytics, $location, $stateParams) {
     $scope.global = Global;
     $scope.package = {
       name: 'recipedetails'

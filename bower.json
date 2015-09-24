@@ -19,7 +19,8 @@
     "angulartics": "latest",
     "angulartics-google-analytics": "latest",
     "angular-mailchimp": "latest",
-    "zeroclipboard":"latest"
+    "zeroclipboard":"latest",
+    "ng-clip":"latest"
   },
   "resolutions": {
     "angular": "1.4.6"

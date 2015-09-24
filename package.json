@@ -51,6 +51,8 @@
     "angulartics":"latest",
     "angulartics-google-analytics":"latest",
     "zeroclipboard":"latest",
+    "ng-clip":"latest",
+    "i18next":"latest",
     "view-helpers": "latest"
   },
   "devDependencies": {
