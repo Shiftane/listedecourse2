@@ -34,20 +34,20 @@
 			"logoUrl" : "http://www.cuisineaz.com/favicon.ico",
 			"spaceCharReplacement" : "-",
 			"searchOptions" : {
-				"resultsPath" : "div.rechRecette",	
-				"resultTitle" : "a.rechRecetTitle",
-				"resultLinkToRecipe" : "a.rechRecetTitle"
+				"resultsPath" : "div#divRecette",	
+				"resultTitle" : "h2#titleRecette a",
+				"resultLinkToRecipe" : "h2#titleRecette a"
 			},
 			"recipeOptions" : {
-				"recettePath" : "div.hrecipe",
+				"recettePath" : "div#ficheRecette",
 				"titlePlaceHolder" : "h1",
-				"prepTimePlaceHolder" : "span.preptime",
-				"cookTimePlaceHolder" : "span.cooktime",
-				"descriptionPlaceHolder" : "span.instructions",
-				"image" : "img.photo",
-				"peoplePlaceHolder" : "span.yield",
-				"peopleParser" : "{} Personne(s)",
-				"ingredientsPlaceHolder" : "p.m_content_recette_ingredients span",
+				"prepTimePlaceHolder" : "span#ctl00_ContentPlaceHolder_LblRecetteTempsPrepa",
+				"cookTimePlaceHolder" : "span#cooktimectl00_ContentPlaceHolder_prepTimeISO",
+				"descriptionPlaceHolder" : "div#preparation",
+				"image" : "img#shareimg",
+				"peoplePlaceHolder" : "span#ctl00_ContentPlaceHolder_LblRecetteNombre",
+				"peopleParser" : "{} Pers.",
+				"ingredientsPlaceHolder" : "div#ingredients",
 				"ingredientsParsingMethod" : "ListMethod",
 				"ingredientPlaceHolder" : "li.ingredient"
 			}
